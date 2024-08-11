@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family:serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
 
 }
@@ -19,8 +19,8 @@ html body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #dadada;
-    z-index: 2;
     background-color: aliceblue;
+    z-index: 2;
 }
 .nav-logo{
     height: 100%;
@@ -53,30 +53,398 @@ html body{
 .nav-menu i{
     display: none;
 }
-.slides-container{
-    position: relative;
-    height: calc(500px - 80px);
-    width: 100%;
-    box-shadow: 0 0 5px 0 #dadada;
-    top: 82px;
-}
-.slides-container .slides{
-    position: relative;
+
+.slider {
     overflow: hidden;
-    width: 100%;
-    height: calc(100% - 40px);
+    height: calc(100vh - 80px);
 }
-.slides-container .slides img{
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider figure img {
+    width: 20%;
+    float: left;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+@keyframes slider {
+    0% {
+        left: 0;}
+    20% {
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+    
+    
+}
+.welcome-content{
+    padding: 2vw 5vw;
+    display: flex;
     width: 100%;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.welcome-content .left-part{
+     width: 50%;
+}
+.welcome-content .right-part{
+    width: 45%;
+    text-align: justify;
+    font-size: 20px;
+    /* height: 50vh; */
+    align-items: start;
+    justify-content: start;
+    padding: 1vw 0px;
+}
+
+.welcome-content .left-part img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0.5vw;
+}
+.welcome-content .right-part h1{
+    font-size: 1.5em;
+    color: rgb(18, 61, 105);
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+}
+/* .welcome-content .right-part  */
+.divider{
+    border-radius: 10px;
+    width: 17%;
+    height: 4px;
+    background-color: rgb(224, 156, 21);
+    margin: 0.2vw 0;
+}
+
+.welcome-content .right-part p {
+    font-size: 0.7em;
+    color: grey;
+    letter-spacing: 0.05vw;
+    line-height: 4vh;
+    padding-top: 1vw;
+
+}
+.values-content{
+    padding: 2vw 5vw;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.our-values-title{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row ;
+}
+.our-values-title h1{
+    margin: 0px 1vw;
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    color: rgb(18, 61, 105);
+    font-weight: 700;
+
+}
+.our-values-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6vh 0;
+    /* height: 70vh; */
+}
+.our-values-container .our-mission , .our-values-container .our-vision{
+    width: 45%;
+    /* height: 70vh; */
+    font-size: 15px;
+
+}
+.our-mission img , .our-vision img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 0.5vw;
+    box-shadow: 5px 5px 3px #a5c3e0;
+}
+.our-mission .mission-details , .our-vision .vision-details{
+    width: 100%;
+    height: 40%;
+    margin: 1vw 0;
+    }
+.our-values-container h2{
+    font-size: 1.7em;
+    color: rgb(18, 61, 105)
+}
+
+.our-values-container p{
+    font-size: 0.9em;
+    padding: 1vw 0;
+    color: rgb(105, 104, 104);
+    letter-spacing: 0.1vw;
+    line-height: 20px;
+}
+.message-content{
+    padding: 2vw 5vw;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(201, 221, 243);
+}
+.message-content .director-desk , .message-content .principal-message{
+    width: 45%;
+}
+
+.director-info, .principal-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 3vw 0;
+    height: 50vh;
+    background-color: rgb(235, 238, 238);
+    font-size: 20px;
+    border-radius: 1vw;
+
+}
+
+.director-info img , .principal-info img{
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }
-.slides-container .slides img:not(.active){
-    top: 0;
-    left: -100%;
+.director-desk h2, .principal-message h2{
+    font-size: 1.2em;
+    color: rgb(18, 61, 105);
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    padding: 1vw 0;
 }
 
-@media (max-width: 600px) {
+.director-info .right-part , .principal-info .right-part{
+    width: 50%;
+    padding: 1vh 1vw;
+    justify-content: center;
+    align-items: start;
+}
+
+.director-info .right-part h2 , .principal-info .right-part h2{
+    font-size: 0.9em;
+    text-transform: none;
+}
+.director-info .right-part p , .principal-info .right-part p{
+    font-size: 0.6em;
+    letter-spacing: 0.1vw;
+    line-height: 3.5vh;
+    color: rgb(100, 99, 99);
+
+
+}
+.director-info .right-part button , .principal-info .right-part button{
+     padding: 2vh 1.7vw;
+     margin: 2vh 0;
+     border: none;
+     background-color: rgb(18, 61, 105);
+     color: aliceblue;
+     border-radius: 8px;
+     cursor: pointer;
+}
+
+.facility-content{  
+    padding: 3vw 5vw;
+}
+.facility-content .facility-title{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.facility-title h1 {
+    font-size: 2.1vw;
+    text-transform: uppercase;
+    color: rgb(18, 61, 105);
+    font-weight: 700;
+    margin: 0px 1vw;
+}
+
+.facility-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 4vw;
+    justify-content: center;
+    margin: 2vw 0;
+}
+.facility-card{
+    background-color: white;
+    width: 20%;
+    height: 30vh;
+    padding: 1% 2%;
+    border-radius: 8%;
+    box-shadow: 2px 2px 5px rgb(201, 221, 243);
+    font-size: 15px;
+}
+.facility-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.facility-card h2{
+    font-size: 1em;
+    color: rgb(18, 61, 105);
+    font-weight: 800;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    padding: 1vw 0;
+}
+.facility-card i{
+    color: #dadada;
+    background-color: rgb(18, 61, 105);
+    border-radius: 50%;
+    padding: 0.5vw;
+}
+footer {
+    background-image: url(/images/location_image.jpeg);
+    background-blend-mode: color-burn;
+    margin-top:15vh;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: #2c2c2c;
+}
+.footer-content{
+    top: -10vh;
+    left: 5%;
+    background-color: #1a1a1a;
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+    border-radius: 25px;
+}
+.triple-divider{
+    transform: rotate(10deg);
+    align-items: center;
+    width: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.divider-small{
+    height: 10vh;
+    width: 1px;
+    background-color: rgb(245, 239, 245);
+}
+.divider-large{
+    height: 20vh;
+    width: 1px;
+    background-color: rgb(247, 244, 244);
+}
+.section{
+    display: flex;
+    color: rgb(214, 214, 214);
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 4vw;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section i {
+    font-size: 2em;
+    color: rgb(224, 156, 21);
+    margin-bottom: 5px;
+}
+.section h3{
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 0.1vw;
+   font-size: 0.9em;
+}
+.section h6{
+    margin-top: 5%;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: silver;
+}
+.socialsites-section{
+    color: rgb(214, 214, 214);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.socialsites-section .icons{
+    display: flex;
+    gap: 2vmax;
+    padding: 3vh 5vw;
+    justify-content: center;
+}
+.icons i {
+    border-radius: 10px;
+    padding: 2vh 1vw;
+    background-color: #2c2c2c;
+    cursor: pointer;
+    transition: background-color 0.5s linear;
+
+}
+.icons i:hover{
+    background-color: rgb(224, 156, 21);
+}
+.copyright{
+    padding: 2.5vh 5vw;
+    border-top: #dadada 0.5px solid;
+}
+
+
+
+
+
+
+
+@media  (max-width: 600px ) {
     .nav{
         position: fixed;
         display: flex;
@@ -110,6 +478,218 @@ html body{
         color: rgb(18, 61, 105);
         font-weight: 800;
     }
+    .slider{
+        height:calc(50vh - 80px);
+        overflow: hidden;
+    }
+    .welcome-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .welcome-content .left-part{
+         width: 100%;
+    }
+    .welcome-content .right-part{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+        align-items: start;
+        padding: 2vw 0px;
+    }
+    
+    .welcome-content .left-part img{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .welcome-content .right-part h1{
+        font-size: 1.3em;
+        color: rgb(18, 61, 105);
+        font-weight: 800;
+        letter-spacing: 0.2vw;
+        text-transform: uppercase;
+    }
+    .divider{
+        border-radius: 10px;
+        width: 17%;
+        height: 3px;
+        background-color: rgb(224, 156, 21);
+        margin: 0.2vw 0;
+    }
+    
+    .welcome-content .right-part p {
+        font-size: 0.9em;
+        color: grey;
+        letter-spacing: 0.02vw;
+        line-height: 2.5vh;
+        padding-top: 1vw;
+    
+    }
+    .values-content{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-values-title{
+        position: relative;
+        left: 15%;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row ;
+    }
+    .our-values-title h1{
+        margin: 0px 1vw;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: rgb(18, 61, 105);
+        font-weight: 700;
+    
+    }
+    .our-values-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        margin: 3vh 0;
+        /* height: 35vh; */
+    }
+    .our-values-container .our-mission , .our-values-container .our-vision{
+        width: 45%;
+        /* height: 40vh; */
+        font-size: 13px;
+    
+    }
+    .our-mission img , .our-vision img {
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+        border-radius: 0.5vw;
+        box-shadow: 5px 5px 3px #a5c3e0;
+    }
+    .our-mission .mission-details , .our-vision .vision-details{
+        width: 100%;
+        height: 40%;
+        margin: 1vw 0;
+        }
+    .our-values-container h2{
+        font-size: 1.5em;
+        color: rgb(18, 61, 105)
+    }
+    
+    .our-values-container p{
+        text-align: justify;
+        font-size: 0.9em;
+        padding: 1vw 0;
+        color: rgb(105, 104, 104);
+        letter-spacing: 0.1vw;
+        line-height: 20px;
+    }
+    .message-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .message-content .director-desk , .message-content .principal-message{
+        width: 100%;
+    }
+    .director-info, .principal-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 3vw 0;
+        height: 50vh;
+        background-color: rgb(235, 238, 238);
+        font-size: 20px;
+        border-radius: 1vh;
+    
+    }
+    .director-info img , .principal-info img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    .director-info .right-part , .principal-info .right-part{
+        width: 100%;
+        padding: 1vh 4vw;
+        justify-content: center;
+        align-items: start;
+    }
+    .director-info .right-part h2 , .principal-info .right-part h2{
+        font-size: 0.7em;
+        text-transform: none;
+    }
+    .director-info .right-part p , .principal-info .right-part p{
+        font-size: 0.6em;
+        letter-spacing: 0.1vw;
+        line-height: 2.5vh;
+        color: rgb(100, 99, 99);
+    
+    
+    }
+    .director-info .right-part button , .principal-info .right-part button{
+         padding: 1.5vh 6vw;
+         margin: 2vh 0;
+         border: none;
+         background-color: rgb(18, 61, 105);
+         color: aliceblue;
+         border-radius: 8px;
+    }
+    .facility-content{  
+        padding: 3vh 5vw;
+    }
+    .facility-title h1 {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: rgb(18, 61, 105);
+        font-weight: 700;
+        margin: 0px 1vw;
+    }
+    .facility-card{
+        background-color: white;
+        width: 150px;
+        height: 20vh;
+        padding: 1% 2%;
+        border-radius: 8%;
+        box-shadow: 2px 2px 5px rgb(201, 221, 243);
+        font-size: 12px;
+    }
+    .facility-card img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .facility-card h2{
+        font-size: 0.9em;
+        color: rgb(18, 61, 105);
+        font-weight: 800;
+        letter-spacing: 0.1vw;
+        text-transform: uppercase;
+        padding: 2vw 0;
+    }
+    .facility-card i{
+        color: #dadada;
+        background-color: rgb(18, 61, 105);
+        border-radius: 50%;
+        padding: 0.8vw;
+    }
+    
+    
+    
+    
+    
+    
     
 
 }
