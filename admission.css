@@ -1,0 +1,92 @@
+.admission-section{
+    padding: 2vw 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+}
+.admission-section img {
+    width: 45%;
+    height: 30vw;
+    border-radius: 10px;
+}
+.admission-section .content {
+    width: 50%;
+    font-size: 15px;
+}
+.admission-section .content ul {
+    list-style: disc;
+}
+.content ul li{
+    margin: 8px 0vw;
+    color:rgb(65, 63, 63);
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 0.3vw;
+}
+.registration-section{
+    margin-top: 5vw;
+    background-color: rgb(217, 229, 239);
+    padding: 2vw 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+.registration-section img{
+    width: 45%;
+    height: 30vw;
+    border-radius: 10px;
+}
+.registration-section .content {
+    width: 50%;
+    font-size: 15px;
+}
+.age-section{
+    margin-top: 5vw;
+    padding: 2vw 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+.age-section img {
+    width: 45%;
+    height: 30vw;
+    border-radius: 10px;
+}
+.age-section .content {
+    width: 50%;
+    font-size: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    color:rgb(18, 61, 105);
+}
+th, td{
+    text-transform: uppercase;
+    width: 40%;
+    padding: 15px 5px;
+    text-align: start;
+    border-bottom: 1px solid #dddddd;
+
+}
+.fee-structure-section {
+    padding: 2vw 5vw;
+    margin-top: 5vw;
+}
+.fee-structure-section img{
+    width: 100%;
+    margin-top: 5vw;
+    filter: brightness(1);
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    
+}
