@@ -10,39 +10,42 @@
 
 </head>
 <body>
-    <div class="nav">
-        <div class="nav-logo">
-            <img src="/images/school_logo.png">
-            <h1>Mahishtra Public School</h1>
-        </div>
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="admission.html">Admission Overview</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact_us.html">Contact Us</a>
-            <i class="ri-menu-3-line"></i>
-        </div>
+    <div class="header-container" id = "header">
+        <nav>
+            <div class="nav-logo">
+                <img src="/images/mall_logo.jpg">
+                <h1>Yusra Mall</h1>
+            </div>           
+            <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="store.html">Stores</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <i class="ri-close-circle-line" onclick="closemenu()"></i>
+        </ul>
+        <i class="ri-menu-3-line" onclick="openmenu()"></i>
+        </nav>
     </div>
         <div class="slider">
             <figure>
-                <img src="images/school_image1.jpg">
-                <img src="images/school_image2.webp">
-                <img src="images/school_image3.jpg">
-                <img src="images/school_image4.jpg">
-                <img src="images/school_image5.jpg">
-                <img src="images/school_image1.jpg">
+                <img src="images/mall_image1.jpeg">
+                <img src="images/mall_image2.jpeg">
+                <img src="images/mall_image3.jpeg">
+                <img src="images/mall_image4.jpeg">
+                <img src="images/mall_image5.jpeg">
+                <img src="images/mall_image1.jpeg">
             </figure>
         </div>
         <div class="content">
             <div class="welcome-content">
                 <div class="left-part">
-                    <img src="images/school_building.jpg">
+                    <img src="images/yusra_mall.webp">
                 </div>
                 <div class="right-part">
-                    <h1>Welcome to our school</h1>
+                    <h1>Welcome to Yusra Mall</h1>
                     <div class="divider"></div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eveniet porro ad minima vero deserunt rerum, dolores dolore fuga facere fugiat exercitationem aliquam cupiditate itaque sunt omnis? Doloremque, fugit corrupti.”</p>
+                    <p>Welcome to <strong style="color:rgb(18, 61, 105)">Yusra Mall</strong>, your ultimate shopping and entertainment destination at Khuri Bridge, Nawada, Bihar. Discover a world of excitement with our wide range of stores, PVR cinema, luxurious hotels, thrilling gaming zones, and much more. Whether you’re shopping, dining, or seeking entertainment, Yusra Mall offers an unforgettable experience for everyone. Come explore and make memories with us today!</p>
                 </div>
             </div>
                 <div class="values-content">
@@ -57,7 +60,8 @@
                             <div class="mission-details">
                                 <h2>Our Mission</h2>
                                 <div class="divider"></div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel unde distinctio incidunt doloremque nesciunt quibusdam porro obcaecati molestiae nostrum iure harum quia, provident qui iusto est eveniet, totam nobis!</p>
+                                <p>Our mission is to provide an exceptional experience to everyone who visits Yusra Mall. We are dedicated to offering a diverse range of services, from shopping and dining to entertainment and leisure, all under one roof. Our goal is to make every visit to Yusra Mall seamless, convenient, and memorable, ensuring that our visitors leave with a sense of satisfaction and joy.
+                                    <br/> <br/>We are committed to becoming the go-to destination for quality, comfort, and entertainment, making Yusra Mall a cornerstone of the community and a place where people of all ages come to create lasting memories.</p>
                             </div>
                         </div>
                         <div class="our-vision">
@@ -65,102 +69,89 @@
                             <div class="vision-details">
                                 <h2>Our Vision</h2>
                                 <div class="divider"></div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel unde distinctio incidunt doloremque nesciunt quibusdam porro obcaecati molestiae nostrum iure harum quia, provident qui iusto est eveniet, totam nobis!</p>
+                                <p>At <strong>Yusra Mall</strong>, our vision is to be the region’s most trusted, innovative, and dynamic shopping and entertainment destination. We aim to redefine the mall experience by setting new standards in customer service and offering a space where everyone feels welcome.
+                                    <br/><br/> Our vision is to create a vibrant and inclusive environment that not only meets but exceeds the expectations of our visitors. We are committed to continuously evolving and expanding to meet the ever-changing needs of our community, making Yusra Mall a hub of activity where people come to relax, shop, and enjoy life.</p>
                             </div>
                         </div>
         
                     </div>
                 </div>
-                <div class="message-content">
-                <div class="director-desk">
-                    <h2>Director's Desk</h2>
-                    <div class="divider"></div>
-                    <div class="director-info">
-                        <img src="images/director.jpg">
-                        <div class="right-part">
-                            <h2>Mr. XYZ</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel unde distinctio incidunt doloremque nesciunt quibusdam porro obcaecati molestiae nostrum iure harum quia, provident qui iusto est eveniet, totam nobis!</p>
-                            <button>Read More</button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="principal-message">
-                    <h2>Principal's Message</h2>
-                    <div class="divider"></div>
-                    <div class="principal-info">
-                        <img src="images/principal.webp">
-                        <div class="right-part">
-                            <h2>Mr. XYZ</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel unde distinctio incidunt doloremque nesciunt quibusdam porro obcaecati molestiae nostrum iure harum quia, provident qui iusto est eveniet, totam nobis!</p>
-                            <button>Read More</button>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
+                <!--Existing Stores  -->
             <div class="facility-content">
                 <div class="facility-title">
                     <div class="divider"></div>
-                    <h1>Our Facilities</h1>
+                    <h1>Existing Stores</h1>
                     <div class="divider"></div>
                 </div>
                 <div class="facility-container">
                     <div class="facility-card" alt="1">
-                        <img src="images/cafeteria.webp">
-                        <h2>Cafeteria</h2>
-                        <i class="ri-arrow-right-line"></i>
+                        <img src="images/pvr.jpeg">
+                        <h2>PVR</h2>
                     </div>
                     <div class="facility-card" alt="2">
-                        <img src="images/library.jpg">
-                        <h2>Library</h2>
-                        <i class="ri-arrow-right-line"></i>
+                        <img src="images/banquet.jpeg">
+                        <h2>Banquet</h2>
                     </div>
                     <div class="facility-card" alt="3">
-                        <img src="images/classrooms.jpeg">
-                        <h2>Class Rooms</h2>
-                        <i class="ri-arrow-right-line"></i>
+                        <img src="images/food_court.jpeg">
+                        <h2>Food Court</h2>
                     </div>
                     <div class="facility-card" alt="4">
-                        <img src="images/medicalroom.jpeg">
-                        <h2>Medical Room</h2>
-                        <i class="ri-arrow-right-line"></i>
+                        <img src="images/hotel.jpeg">
+                        <h2>Hotel</h2>
                     </div>
                     <div class="facility-card" alt="5">
-                        <img src="images/laboratory.jpg">
-                        <h2>Laboratories</h2>
-                        <i class="ri-arrow-right-line"></i>
+                        <img src="images/gaming_zone.jpeg">
+                        <h2>Gaming Zone</h2>
                     </div>
-                    <div class="facility-card" alt="6">
-                        <img src="images/sports.jpg">
-                        <h2>Sports Facilities</h2>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                    <div class="facility-card" alt="6">
-                        <img src="images/musicroom.jpeg">
-                        <h2>Music Rooms</h2>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                    <div class="facility-card" alt="6">
-                        <img src="images/playground.jpeg">
-                        <h2>Playground</h2>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
+                    
                 </div>
             </div>
+            <!-- Upcoming Brands -->
+            <div class="facility-content">
+                <div class="facility-title">
+                    <div class="divider"></div>
+                    <h1>Upcoming Brands</h1>
+                    <div class="divider"></div>
+                </div>
+                <div class="facility-container">
+                    <div class="facility-card" alt="1">
+                        <img src="images/nike.jpeg">
+                        <h2>Nike</h2>
+                    </div>
+                    <div class="facility-card" alt="2">
+                        <img src="images/blackberry.jpeg">
+                        <h2>Blackberry</h2>
+                    </div>
+                    <div class="facility-card" alt="3">
+                        <img src="images/westside.jpeg">
+                        <h2>Westside</h2>
+                    </div>
+                    <div class="facility-card" alt="4">
+                        <img src="images/allen_jolly.jpeg">
+                        <h2>Allen Solly</h2>
+                    </div>
+                    <div class="facility-card" alt="5">
+                        <img src="images/adidas.jpeg">
+                        <h2>Adidas</h2>
+                    </div>
+                    
+                </div>
+            </div>
+           
             <footer>
                 <div class="footer-content">
                     <div class="section">
                         <i class="ri-pin-distance-fill"></i>
                         <h3>Address</h3>
-                        <h6>Kurthoul, NH-83<br>Patna-804453</h6>
+                        <h6>Main Road (Near Khuri Bridge),<br> Nawada,Bihar</h6>
                     </div>
                     <div class="triple-divider">
                         <div class="divider-small"></div>
                         <div class="divider-large"></div>
                         <div class="divider-small"></div>
                     </div>
+    
                     <div class="section">
                         <i class="ri-phone-fill"></i>
                         <h3>Phone Number</h3>
@@ -174,7 +165,7 @@
                     <div class="section">
                         <i class="ri-mail-fill"></i>
                         <h3>Email Address</h3>
-                        <h6>school@gmail.com <br>info@school.com</h6>
+                        <h6>yusra@gmail.com <br>info@yusra.com</h6>
                     </div>
                 </div>
                 <div class="socialsites-section">
@@ -185,13 +176,14 @@
                         <i class="ri-threads-fill"></i>
                     </div>
                     <div class="copyright">
-                        <p>Copyright © 2024 - 2024 AARN Limited - Developed by YGSD</p>
+                        <p>Copyright © 2024 - 2024 - Developed by YGSD</p>
                     </div>
                 </div>
             </footer>
+            
         </div>
         
 
-        <script src="home.js"></script>
+        <script src="portfolio.js"></script>
 </body>
 </html>

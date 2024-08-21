@@ -34,19 +34,19 @@ html body{
     justify-content: center;
 }
 .page-nav a{
-    color: rgb(18, 61, 105);
+    color: rgb(224, 156, 21);
     text-decoration: none;
     font-size: 1.2em;
     cursor: pointer;
     transition: color 0.5s ease-in-out;
 }
 .page-nav a:hover{
-    color: rgb(224, 156, 21);
+    color: rgb(127, 181, 228);
 }
 .page-nav i{
     font-size: 1.2em;
     margin: 0px 2px;
-    color: rgb(18, 61, 105);
+    color: rgb(224, 156, 21);
 }
 .aims-objectives{
     margin-top: 20vh;

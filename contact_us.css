@@ -9,6 +9,7 @@
     justify-content: space-between;
 }
 .contact-section .card{
+    cursor: pointer;
     width: 30%;
     text-align: center;
     background-color:rgb(201, 221, 243);
@@ -17,6 +18,10 @@
     padding: 3vw 2vw;
     border-radius: 10px;
     font-size: 17px;
+    transition:transform 0.5s linear;
+}
+.contact-section .card:hover{
+    transform: scale(1.1);
 }
 .contact-section .card i{
    color: rgb(224, 156, 21);
@@ -40,11 +45,11 @@
 }
 .address-map{
     width: 100%;
-    height: 35vw;
+    height: 40vw;
     padding: 2vw 5vw;
     margin: 2vw 0;
 }
-.address-map .img{
+.address-map iframe{
     width: 100%;
     height: 100%;
     border-radius: 10px;
